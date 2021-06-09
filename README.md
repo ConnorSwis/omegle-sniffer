@@ -2,6 +2,7 @@
 
 An IP locator for Omegle.
 
+![picture](https://raw.githubusercontent.com/ConnorSwis/omegle-sniffer/main/picture.png?token=AMO72IG6DR54RX3SXCEUJ5LAYEIBW)
 
 ## Installation
 1. Clone the repository
