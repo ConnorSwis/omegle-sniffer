@@ -2,6 +2,10 @@
 
 An IP locator for Omegle.
 
+FOR EDUCATIONAL PURPOSES ONLY!
+
+I wanted a project to filter internet traffic and use an API.
+
 ![picture](https://raw.githubusercontent.com/ConnorSwis/omegle-sniffer/main/picture.png?token=AMO72IG6DR54RX3SXCEUJ5LAYEIBW)
 
 ## Installation
