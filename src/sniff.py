@@ -4,8 +4,7 @@ import requests
 from collections import Counter
 import os
 
-
-BLOCK_LIST = ['192', '162', '76', '31', '104']
+BLOCK_LIST = ['192', '76', '31', '104', '24']
 
 capture = pyshark.LiveCapture(
     interface='Ethernet',
@@ -26,12 +25,12 @@ def sniff():
         os.system('cls')
         request = requests.get(f'http://ip-api.com/json/{str(ip)}')
         json = request.json()
-        print('Country: ' + json.get('country'))
-        print('State: ' + json.get('regionName'))
-        print('City: ' + json.get('city'))
-        print('isp: ' + json.get('isp'))
-        print('Org: ' + json.get('org'))
-        print('IP: ' + json.get('query'))
+        print('Country: ' + json.get('country', ''))
+        print('State: ' + json.get('regionName', ''))
+        print('City: ' + json.get('city', ''))
+        print('isp: ' + json.get('isp', ''))
+        print('Org: ' + json.get('org', ''))
+        print('IP: ' + json.get('query', ''))
         capture.clear()
 
 
