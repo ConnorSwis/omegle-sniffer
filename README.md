@@ -2,12 +2,17 @@
 
 An IP locator for Omegle.
 
+FOR EDUCATIONAL PURPOSES ONLY!
+
+I wanted a project to filter internet traffic and use an API.
+
 ![picture](https://raw.githubusercontent.com/ConnorSwis/omegle-sniffer/main/picture.png?token=AMO72IG6DR54RX3SXCEUJ5LAYEIBW)
 
 ## Installation
-1. Clone the repository
-2. Install the required packages
-3. Run sniff.py
+1. Install tshark with [wireshark](https://www.wireshark.org/download.html)
+2. Clone the repository
+3. Install the required packages
+4. Run sniff.py
 
 ## Usage
 Press `shift + a` to locate the IP.
