@@ -26,12 +26,12 @@ def sniff():
         os.system('cls')
         request = requests.get(f'http://ip-api.com/json/{str(ip)}')
         json = request.json()
-        print('Country: ' + json['country'])
-        print('State: ' + json['regionName'])
-        print('City: ' + json['city'])
-        print('isp: ' + json['isp'])
-        print('Org: ' + json['org'])
-        print('IP: ' + json['query'])
+        print('Country: ' + json.get('country'))
+        print('State: ' + json.get('regionName'))
+        print('City: ' + json.get('city'))
+        print('isp: ' + json.get('isp'))
+        print('Org: ' + json.get('org'))
+        print('IP: ' + json.get('query'))
         capture.clear()
 
 
