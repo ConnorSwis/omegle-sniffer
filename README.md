@@ -3,6 +3,7 @@
 An IP locator for Omegle.
 
 FOR EDUCATIONAL PURPOSES ONLY!
+
 I AM NOT RESPONSIBLE FOR ANY MISUSE OR ABUSE.
 
 I wanted a project to filter internet traffic, use an API, and build an application window.
