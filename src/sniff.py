@@ -3,15 +3,18 @@ from collections import Counter
 
 import pyshark
 import requests
-from PyQt6 import QtGui
+from PyQt6 import QtGui, QtCore
 from PyQt6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
                              QVBoxLayout, QWidget)
 
 BLOCK_LIST = ['31', '192', '75', '10', '162', '73']
+ALWAYS_ON_TOP = True
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
+        if ALWAYS_ON_TOP:
+            self.setWindowFlags(QtCore.Qt.WindowType.WindowStaysOnTopHint)
         self.block_list = BLOCK_LIST
 
         self.capture = pyshark.LiveCapture(
