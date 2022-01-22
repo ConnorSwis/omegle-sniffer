@@ -21,14 +21,13 @@ class MainWindow(QMainWindow):
             interface='Ethernet',
             display_filter=(
                 "udp && ip.src_host matches" +
-                " \"^(?!({'|'.join(self.block_list)})).*\""
+                f" \"^(?!({'|'.join(self.block_list)})).*\""
             ),
         )
 
         self.setWindowTitle("Sniffer")
 
         self.button = QPushButton("Sniff!")
-        self.button.setCheckable(True)
         self.button.clicked.connect(self.sniff)
 
         self.label = QLabel(
@@ -48,6 +47,7 @@ class MainWindow(QMainWindow):
         self.setFixedSize(210, 150)
         self.setWindowIcon(QtGui.QIcon('./src/sniffer.png'))
         self.setCentralWidget(widget)
+
 
     @staticmethod
     def common(L):
